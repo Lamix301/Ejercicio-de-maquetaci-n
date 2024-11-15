@@ -1,0 +1,290 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-primario:#517260;
+    --color-secundario:#9F7E59;
+    --color-texto:#6A260F;
+    --color-parrafo:#A87257;
+    --color-h2:#BF0404;
+    --color-texto-principal:#D9B88F;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--color-primario);
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+}
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-texto);
+    padding-left: 40px;
+     filter: drop-shadow(2px 2px 20px bisque);
+}
+#casa-de-inicio ::before {
+content:"\f015";
+padding-right: 5px;
+font-family: fontAwesome;
+color: var(--color-texto);
+}
+#telefono-de-contacto ::before{
+    content:"\f095";
+    font-family: fontAwesome;
+    padding-right: 5px;
+}
+h1 {
+    font-weight: bold;
+    font-style: oblique;
+}
+h2 {
+    color: var(--color-h2);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h3 {
+   
+    
+}
+p {
+    color: var(--color-texto);
+    font-weight: bold;
+}
+
+h1 span {
+    color: var(--color-texto-principal);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h2 span {
+    color: black;
+    text-transform:uppercase;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p span {
+    color: white;
+    
+}
+.sour-gummy {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+header nav ul {
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: var(--color-texto);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.hero {
+    background-image: url(/images/attack-on-titan-training-corps-iifxwvynzuhicsxc.jpg); 
+    height: 100vh;
+    object-fit:fill;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: white;
+    text-align: center; 
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+}
+
+.hero p {
+    font-size: 1.5rem; 
+    margin-bottom: 30px;
+}
+.btn {
+   background-color: var(--color-primario); 
+   font-weight: bold;
+   color: var(--color-texto); 
+   padding: 10px 20px; 
+   text-decoration: none; 
+   border-radius: 8px; 
+   transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+   background-color: bisque; 
+}
+
+.proyectos, .beneficios, .contacto {
+   padding-top: 100px; 
+   text-align: center;
+   padding-bottom: 50px;
+  
+}
+.proyectos {
+    background-color: var(--color-primario);
+}
+.proyectos h2 {
+    text-shadow: 2px 2px 20px;
+    padding-bottom: 10px;
+}
+
+.flex-galeria {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap:wrap; 
+}
+.item {
+    margin: 10px; 
+    max-width: 300px; 
+    background-color: var(--color-secundario);
+    border-radius: 8px;
+    padding: 20px;
+    
+    
+}
+.item h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+img {
+    width: 100%;
+}
+figure {
+    transform-origin: 0 0;
+    transition: all 850ms ease-in-out;
+    box-shadow: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item img {
+   width: 100%; 
+   border-radius: 10px;
+   
+}
+
+.beneficios {
+    padding-top: 100px; 
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: var(--color-secundario);
+}
+.beneficios h2 {
+    text-shadow: 2px 2px 20px;
+    padding-bottom: 10px;
+}
+div.flex-beneficios {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    
+}
+
+.beneficio {
+   background-color:var(--color-primario); 
+   border-radius :7px ;  
+   padding :20px;
+   margin: 10px; 
+    flex:1 1 30%; /* Crece, se encoge y tiene un ancho base del 30% */
+    height: 530px;
+    width: 180px; 
+    align-content: center;
+    text-align: center; 
+}
+.beneficio h3 {
+    padding-bottom: 10px;
+}
+
+#contacto .ubicacion::before {
+    content:"\f3c5";
+    font-family: fontAwesome;
+    padding-right: 5px;
+}
+#contacto .telefono::before {
+    content:"\f095";
+    font-family: fontAwesome;
+    padding-right: 5px;
+}
+#contacto .email::before {
+    content:"\f0e0";
+    font-family: fontAwesome;
+    padding-right: 5px;
+}
+#contacto.contacto  {
+    text-align: start;
+    padding-left: 130px;
+    padding-top: 100px;
+    background-color: var(--color-primario);
+    
+}
+.contacto ul{
+display: flex;
+justify-content: space-around; 
+flex-wrap: wrap; 
+list-style: none;
+text-align: center;
+margin-bottom: 60px;
+}
+.contacto li {
+    color:aliceblue;
+    font-weight: bold;
+    border: solid 2px;
+    border-radius: 6px;
+    padding: 50px;
+    background-color: var(--color-secundario);
+    margin: 10px;
+}
+.contacto h2 {
+    font-size: 40px;
+    padding-bottom: 50px;
+    text-transform:uppercase;
+    color:var(--color-secundario);
+    text-shadow: 2px 2px 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contacto h3 {
+    font-size: 25px;
+    margin-bottom:40px;
+    color: thistle;
+}
+section li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer {
+   text-align:center ;  
+   padding :21px ;  
+   background-color: antiquewhite;
+}
