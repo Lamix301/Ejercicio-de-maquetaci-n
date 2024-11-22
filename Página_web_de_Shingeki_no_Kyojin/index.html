@@ -55,6 +55,32 @@
     </section>
     <section id="contacto" class="contacto">
         <h2>Contacto</h2>
+        <div class="form-container">
+            <form action="" method="get" class="formulario">
+                <h1>Formulario de contacto</h1>
+                <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu Email" required>
+                
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+                
+                <label for="sitio-web">Sitio web</label>
+                <input type="url" id="sitio-web" name="sitio-web" placeholder="Escribe la URL de tu web">
+                
+                <label for="asunto">Asunto *</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required>
+                
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Deja aquí tu comentario..." required></textarea>
+                
+                <input type="submit">
+                <p class="nota">* Los campos son obligatorios.</p>
+            </form>
+        </div>
         <ul>
             <li><h3 class="ubicacion">Ubicación</h3> Paradis Island</li>
             <li><h3 class="telefono">Teléfono</h3> +123 456 7890</li>
