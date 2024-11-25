@@ -339,8 +339,18 @@ footer {
    background-color: antiquewhite;
 }
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: red;
+    .formulario {
+      background-color: var(--color-secundario);
+      
+    }
+    .formulario h1 {
+        color: var(--color-primario);
+    }
+    .formulario .nota {
+        color: #333;
+    }
+    #contacto.contacto {
+        padding-left: 0px;
     }
     
 }
